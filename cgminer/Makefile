@@ -12,42 +12,42 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=cgminer
 
 ifeq ($(CONFIG_CGMINER_AVALON4),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/Canaan-Creative/cgminer avalon4 | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalon4 | cut -f1 | cut -c1-7)
 	PKG_REV:=avalon4
 else
 	PKG_VERSION:=4.6.0
 	PKG_REV:=06b44fcc2ed64a3e0d8288287d28176132433642
 endif
 ifeq ($(CONFIG_CGMINER_AVALON6),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/Canaan-Creative/cgminer avalon4 | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalon4 | cut -f1 | cut -c1-7)
 	PKG_REV:=avalon4
 endif
 ifeq ($(CONFIG_CGMINER_AVALON7),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/Canaan-Creative/cgminer master | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer master | cut -f1 | cut -c1-7)
 	PKG_REV:=master
 endif
 ifeq ($(CONFIG_CGMINER_AVALON8),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/Canaan-Creative/cgminer avalon8 | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalon8 | cut -f1 | cut -c1-7)
 	PKG_REV:=avalon8
 endif
 ifeq ($(CONFIG_CGMINER_AVALON850),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/Canaan-Creative/cgminer avalon850 | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalon850 | cut -f1 | cut -c1-7)
 	PKG_REV:=avalon850
 endif
 ifeq ($(CONFIG_CGMINER_AVALON8_LP),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/Canaan-Creative/cgminer avalon8_lp | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalon8_lp | cut -f1 | cut -c1-7)
 	PKG_REV:=avalon8_lp
 endif
 ifeq ($(CONFIG_CGMINER_AVALON9),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/Canaan-Creative/cgminer avalon9 | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalon9 | cut -f1 | cut -c1-7)
 	PKG_REV:=avalon9
 endif
 ifeq ($(CONFIG_CGMINER_AVALON911),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/Canaan-Creative/cgminer avalon911 | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalon911 | cut -f1 | cut -c1-7)
 	PKG_REV:=avalon911
 endif
 ifeq ($(CONFIG_CGMINER_AVALONLC3),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/Canaan-Creative/cgminer avalonlc3 | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalonlc3 | cut -f1 | cut -c1-7)
 	PKG_REV:=avalonlc3
 endif
 
@@ -56,33 +56,33 @@ PKG_INSTALL:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_REV).tar.bz2
 ifeq ($(CONFIG_CGMINER_AVALON4),y)
-	PKG_SOURCE_URL:=git://github.com/Canaan-Creative/cgminer.git
+	PKG_SOURCE_URL:=git://github.com/u230925/cgminer.git
 else
 	PKG_SOURCE_URL:=git://github.com/ckolivas/cgminer.git
 endif
 ifeq ($(CONFIG_CGMINER_AVALON6),y)
-	PKG_SOURCE_URL:=git://github.com/Canaan-Creative/cgminer.git
+	PKG_SOURCE_URL:=git://github.com/u230925/cgminer.git
 endif
 ifeq ($(CONFIG_CGMINER_AVALON7),y)
-	PKG_SOURCE_URL:=git://github.com/Canaan-Creative/cgminer.git
+	PKG_SOURCE_URL:=git://github.com/u230925/cgminer.git
 endif
 ifeq ($(CONFIG_CGMINER_AVALON8),y)
-	PKG_SOURCE_URL:=git://github.com/Canaan-Creative/cgminer.git
+	PKG_SOURCE_URL:=git://github.com/u230925/cgminer.git
 endif
 ifeq ($(CONFIG_CGMINER_AVALON850),y)
-	PKG_SOURCE_URL:=git://github.com/Canaan-Creative/cgminer.git
+	PKG_SOURCE_URL:=git://github.com/u230925/cgminer.git
 endif
 ifeq ($(CONFIG_CGMINER_AVALON8_LP),y)
-	PKG_SOURCE_URL:=git://github.com/Canaan-Creative/cgminer.git
+	PKG_SOURCE_URL:=git://github.com/u230925/cgminer.git
 endif
 ifeq ($(CONFIG_CGMINER_AVALON9),y)
-	PKG_SOURCE_URL:=git://github.com/Canaan-Creative/cgminer.git
+	PKG_SOURCE_URL:=git://github.com/u230925/cgminer.git
 endif
 ifeq ($(CONFIG_CGMINER_AVALON911),y)
-	PKG_SOURCE_URL:=git://github.com/Canaan-Creative/cgminer.git
+	PKG_SOURCE_URL:=git://github.com/u230925/cgminer.git
 endif
 ifeq ($(CONFIG_CGMINER_AVALONLC3),y)
-	PKG_SOURCE_URL:=git://github.com/Canaan-Creative/cgminer.git
+	PKG_SOURCE_URL:=git://github.com/u230925/cgminer.git
 endif
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
@@ -98,7 +98,7 @@ define Package/cgminer
 	TITLE:=cgminer
 	URL:=https://github.com/ckolivas/cgminer
 ifeq ($(CONFIG_TARGET_brcm2708_RaspberryPi),)
-	DEPENDS:=+libcurl +libpthread +jansson +udev +libusb-1.0
+	DEPENDS:=+libcurl +libpthread +jansson +udev +libusb-1.0 +zlib
 else
 	DEPENDS:=+libcurl +libpthread +jansson +udev +libusb-1.0 +libncurses
 endif
