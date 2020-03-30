@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mm-tools
-PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/Avalon-extras master | cut -f1 | cut -c1-7)
+PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/Avalon-extras avalon821 | cut -f1 | cut -c1-7)
 PKG_REV:=master
 PKG_RELEASE:=1
 PKG_INSTALL:=1
