@@ -27,7 +27,7 @@ ifeq ($(CONFIG_CGMINER_AVALON7),y)
 	PKG_REV:=master
 endif
 ifeq ($(CONFIG_CGMINER_AVALON8),y)
-	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalon8 | cut -f1 | cut -c1-7)
+	PKG_VERSION:=git-$(shell git ls-remote https://github.com/u230925/cgminer avalon821 | cut -f1 | cut -c1-7)
 	PKG_REV:=avalon821
 endif
 ifeq ($(CONFIG_CGMINER_AVALON850),y)
